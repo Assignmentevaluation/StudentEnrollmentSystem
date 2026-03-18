@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="StudentEnrollment.API/StudentEnrollment.API.csproj" />
+  <Project Path="StudentEnrollment.Core/StudentEnrollment.Core.csproj" />
+  <Project Path="StudentEnrollment.Infrastructure/StudentEnrollment.Infrastructure.csproj" />
+</Solution>

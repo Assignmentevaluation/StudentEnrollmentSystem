@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Courses.html" />
+    <None Include="wwwroot\css\styles.css" />
+    <None Include="wwwroot\enrollments.html" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\js\api.js" />
+    <None Include="wwwroot\js\Courses.js" />
+    <None Include="wwwroot\js\enrollments.js" />
+    <None Include="wwwroot\js\students.js" />
+    <None Include="wwwroot\students.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudentEnrollment.Core\StudentEnrollment.Core.csproj" />
+    <ProjectReference Include="..\StudentEnrollment.Infrastructure\StudentEnrollment.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
